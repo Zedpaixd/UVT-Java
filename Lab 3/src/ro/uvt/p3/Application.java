@@ -50,9 +50,13 @@ public class Application {
         Apple redApple = new Apple(150, 18, 80, Fruit.Color.RED);
         Apple greenApple = new Apple(160, 19, 82, Fruit.Color.GREEN);
 
+//        System.out.println(banana.toString());
+
         System.out.println(computeWeight(id.readFruit()));
         System.out.println(computeSugarContent(id.readFruit()));
         prepareFruit(id.readFruit());
 
+
+        
     }
 }
