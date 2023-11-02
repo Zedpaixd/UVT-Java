@@ -11,20 +11,23 @@ class PersonClass implements Person {
         this.age = age;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public int getAge() {
         return age;
     }
 
+    @Override
     public void introduceSelf() {
         System.out.println("Hi, my name is " + this.getName() + " and I am " + this.getAge() + " years old.");
     }
 
     public void addFriend(PersonClass friendName) {
-        if (friendCircle.contains(friendName)) return;
+        if (friendCircle.contains(friendName)) return;   // guard clause
         friendCircle.add(friendName);
         friendName.addFriend(this);
     }
@@ -44,5 +47,10 @@ class PersonClass implements Person {
         for (PersonClass friend : friendCircle) {
             System.out.println("- " + friend.getName());
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Hi, i'm " + name;
     }
 }

@@ -31,6 +31,9 @@ public class Main {
         classroom.addGrade(john.getName(), 90);
         classroom.addGrade(alice.getName(), 87);
 
+//        PersonClass johnA = new PersonClass("Name", 57);
+//        System.out.println(johnA.toString());
+
         // "Printing" the classroom
         System.out.println(classroom);
     }

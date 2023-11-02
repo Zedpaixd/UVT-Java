@@ -5,7 +5,8 @@ import java.util.Date;
 
 class Classroom {
     private ArrayList<PersonClass> students = new ArrayList<>();
-    private HashMap<String, Integer> gradebook = new HashMap<>();
+//    private HashMap<String, Integer> gradebook = new HashMap<>();
+    private HashMap<Integer,String> gradebook = new HashMap<>();
     private Teacher classroomTeacher;
     private String className;
 
@@ -20,7 +21,7 @@ class Classroom {
     }
 
     public void addGrade(String studentName, int grade) {
-        gradebook.put(studentName, grade);
+        gradebook.put(grade, studentName);
     }
 
     @Override
