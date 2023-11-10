@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         InputDevice id = new InputDevice(System.in);
         OutputDevice od = new OutputDevice(System.out);
-
+//
 //        FileInputStream FIS = new FileInputStream("file.txt");
 //        FileOutputStream FOS = new FileOutputStream("file.txt",true);
 //        InputDevice id = new InputDevice(FIS);
@@ -21,12 +21,14 @@ public class Main {
 //        Application app = new Application(id, od);
 //        Playground pg = new Playground();
 
-        od.writeBytes("Project presentations in 2 weeks\n".getBytes());
-        od.writeToFile("woah this is magic\n","file.txt",true);
+//        od.writeBytes("Project presentations in 2 weeks\n".getBytes());
+//        od.writeToFile("hello there\n","file.txt",true);
         id.testRead();
 
-        FileOperations.askUserForFile();
-        FileOperations.writeRandomNumbers();
+
+
+//        FileOperations.writeRandomNumbers();
+//        FileOperations.askUserForFile();
 
 //        pg.run();
 //        app.run();

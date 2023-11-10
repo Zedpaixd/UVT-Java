@@ -19,6 +19,7 @@ public class FileOperations {
                 break;
             } catch (IOException e) {
                 System.out.println("Could not open file. Please try again.");
+//                e.printStackTrace();
             }
         }
     }
@@ -29,7 +30,7 @@ public class FileOperations {
         while (true) {
             System.out.println("Enter a file name to write random numbers:");
             String fileName = scanner.nextLine();
-            try (FileWriter writer = new FileWriter(fileName)) {
+            try (FileWriter writer = new FileWriter(fileName,true)) {
                 for (int i = 0; i < 10; i++) {
                     writer.write(random.nextInt(100) + "\n"); // Writes random numbers between 0 and 99
                 }

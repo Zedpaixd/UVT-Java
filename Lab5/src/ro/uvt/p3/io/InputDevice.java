@@ -1,4 +1,5 @@
 package ro.uvt.p3.io;
+import ro.uvt.p3.UVTException;
 import ro.uvt.p3.fruits.Apple;
 import ro.uvt.p3.fruits.Banana;
 import ro.uvt.p3.fruits.Mango;
@@ -19,7 +20,6 @@ public class InputDevice {
 
     public void testRead(){
         try {
-
             String temp;
             if (inputStream != System.in) {
                 temp = new String(inputStream.readAllBytes());
@@ -28,9 +28,17 @@ public class InputDevice {
                 Scanner input = new Scanner(inputStream);
                 temp = input.nextLine();
             }
-                System.out.println("You wrote: " + temp);
-        } catch (Exception e) {
+
+            if (temp.endsWith("UVT")) throw new UVTException("Custom Exception caught");
+
+
+            System.out.println("You wrote: " + temp);
+
+        } catch (IOException e) {
             e.printStackTrace();
+        } catch (UVTException e) {
+            System.err.println(e.getMessage());
+//            e.printStackTrace();
         }
     }
 
