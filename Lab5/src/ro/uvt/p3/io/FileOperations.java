@@ -18,7 +18,7 @@ public class FileOperations {
                 }
                 break;
             } catch (IOException e) {
-                System.out.println("Could not open file. Please try again.");
+                System.err.println("Could not open file. Please try again.");
 //                e.printStackTrace();
             }
         }
@@ -36,7 +36,7 @@ public class FileOperations {
                 }
                 break;
             } catch (IOException e) {
-                System.out.println("Could not open file. Please try again.");
+                System.err.println("Could not open file. Please try again.");
             }
         }
     }
