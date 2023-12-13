@@ -5,11 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
-
 import java.util.HashMap;
 
-public class LogIn_Controller {
+public class Register_Controller {
     @FXML
     private Label usernameLabel;
     @FXML
@@ -33,19 +31,24 @@ public class LogIn_Controller {
 
 
     @FXML
-    protected void onLogInClick() {
+    protected void onRegisterClick() {
 
-        if(Accounts.verifyExistance(emailField.getText(),usernameField.getText(),Encryption.Encrypt(passwordField.getText(),"Lab9"))) {
-            errorLabel.setText("Log In Successful!");
-            errorLabel.setTextFill(Color.GREEN);
-        } else {
-            errorLabel.setText("Account does not exist.");
-            errorLabel.setTextFill(Color.RED);
+        if (usernameField.getText().isEmpty() || passwordField.getText().isEmpty() || emailField.getText().isEmpty()) {
+            errorLabel.setText("Fields can not be left empty!");
+            return;
         }
+
+        errorLabel.setText("");
+
+        Accounts.addAccount(new AccountTemplate(emailField.getText(),
+                                                usernameField.getText(),
+                                                Encryption.Encrypt(passwordField.getText(),"Lab9")));
+
+        Accounts.printAccounts();
     }
 
     @FXML
-    protected void onChangeToRegisterClick(){
-        ScreenController.activate("Register");
+    protected void onChangeToLogInClick(){
+        ScreenController.activate("LogIn");
     }
 }

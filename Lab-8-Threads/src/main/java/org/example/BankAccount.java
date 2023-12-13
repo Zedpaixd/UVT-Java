@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class BankAccount {
     private final String filePath;
-    private final ReentrantLock lock = new ReentrantLock(); // true vs false argument --> false may result in starvation for long waiting
+    private final ReentrantLock lock = new ReentrantLock(true); // true vs false argument --> false may result in starvation for long waiting
     // synchronized (this) { ... }
 
     public BankAccount(String filePath) {
