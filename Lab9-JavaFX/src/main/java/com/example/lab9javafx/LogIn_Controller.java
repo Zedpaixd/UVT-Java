@@ -27,7 +27,7 @@ public class LogIn_Controller {
     private TextField emailField;
 
     @FXML
-    private Button registerButton;
+    private Button logInButton;
     @FXML
     private Button changeScreenButton;
 
@@ -38,6 +38,7 @@ public class LogIn_Controller {
         if(Accounts.verifyExistance(emailField.getText(),usernameField.getText(),Encryption.Encrypt(passwordField.getText(),"Lab9"))) {
             errorLabel.setText("Log In Successful!");
             errorLabel.setTextFill(Color.GREEN);
+//            ScreenController.activate("");
         } else {
             errorLabel.setText("Account does not exist.");
             errorLabel.setTextFill(Color.RED);

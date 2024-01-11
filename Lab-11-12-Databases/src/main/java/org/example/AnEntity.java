@@ -1,17 +1,26 @@
 package org.example;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "warehouse")
 public class AnEntity {
+
     @Id
+    @Column(name = "id", unique = true)
     private int id;
+    @Column(name = "name", nullable = false)
     private String name;
+    @Column(name = "quantity", nullable = false)
     private double quantity;
 
-    // Constructors
-    public AnEntity() {}
+    public AnEntity() {
+        // needed for JPA
+    }
 
     public AnEntity(int id, String name, double quantity) {
         this.id = id;
@@ -42,5 +51,14 @@ public class AnEntity {
 
     public void setQuantity(double quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "AnEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                '}';
     }
 }

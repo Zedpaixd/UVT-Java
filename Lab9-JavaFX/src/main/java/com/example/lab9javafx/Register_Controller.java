@@ -8,12 +8,7 @@ import javafx.scene.control.TextField;
 import java.util.HashMap;
 
 public class Register_Controller {
-    @FXML
-    private Label usernameLabel;
-    @FXML
-    private Label passwordLabel;
-    @FXML
-    private Label emailLabel;
+
     @FXML
     private Label errorLabel;
 
@@ -51,4 +46,6 @@ public class Register_Controller {
     protected void onChangeToLogInClick(){
         ScreenController.activate("LogIn");
     }
+
+
 }

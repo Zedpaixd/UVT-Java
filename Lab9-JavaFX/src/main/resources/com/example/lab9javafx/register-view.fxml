@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" pickOnBounds="false" prefHeight="257.0" prefWidth="324.0" snapToPixel="false" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab9javafx.Register_Controller">
+<VBox alignment="CENTER" pickOnBounds="false" prefHeight="257.0" prefWidth="389.0" snapToPixel="false" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab9javafx.Register_Controller">
    <children>
       <HBox alignment="CENTER" layoutX="10.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="268.0" spacing="10.0">
          <children>

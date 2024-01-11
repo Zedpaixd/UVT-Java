@@ -32,7 +32,7 @@
         </HBox>
         <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="268.0" spacing="30.0">
             <children>
-                <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onLogInClick" text="Log In" />
+                <Button fx:id="logInButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onLogInClick" text="Log In" />
                 <Button fx:id="changeScreenButton" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onChangeToRegisterClick" text="Change To Register">
                     <HBox.margin>
                         <Insets right="5.0" />

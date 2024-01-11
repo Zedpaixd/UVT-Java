@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02edd0aa-5c91-4534-9e45-970ced4ac2d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab10-Sockets/src/main/java/org/example/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab10-Sockets/src/main/java/org/example/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab9-JavaFX/src/main/java/com/example/lab9javafx/LogIn_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab9-JavaFX/src/main/java/com/example/lab9javafx/LogIn_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab9-JavaFX/src/main/java/com/example/lab9javafx/Register_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab9-JavaFX/src/main/java/com/example/lab9javafx/Register_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab9-JavaFX/src/main/resources/com/example/lab9javafx/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab9-JavaFX/src/main/resources/com/example/lab9javafx/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab9-JavaFX/src/main/resources/com/example/lab9javafx/register-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab9-JavaFX/src/main/resources/com/example/lab9javafx/register-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2amM3kNrAGh6y2c2GX5ITQvVSIy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Armand/Desktop/Programming Stuff/Java/UVT-Java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02edd0aa-5c91-4534-9e45-970ced4ac2d2" name="Changes" comment="" />
+      <created>1704919104072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704919104072</updated>
+    </task>
+    <servers />
+  </component>
+</project>
